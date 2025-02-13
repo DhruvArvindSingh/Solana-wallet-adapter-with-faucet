@@ -21,9 +21,13 @@ function WalletDetails() {
     }, [wallet.publicKey]);     
     return(
         <div>
-            {/* <h1>Wallet Details</h1>
-            <p>Wallet Address: {wall}</p>
-            <p>Balance: {balance} SOL</p> */}
+            {wallet.publicKey !== null && (
+                <div>
+                    <h1>Wallet Details</h1>
+                    <p>Wallet Address: {wallet.publicKey.toString()}</p>
+                    <p>Balance: {balance} SOL</p>
+                </div>
+            )}
         </div>
     )
 

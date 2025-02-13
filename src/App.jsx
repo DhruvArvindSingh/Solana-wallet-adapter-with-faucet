@@ -18,7 +18,7 @@ function App() {
       <WalletProvider wallets={[]}>
         <WalletModalProvider>
           <div className='container'>
-            {/* <WalletDetails/> */}
+            <WalletDetails/>
             <Airdrop />
             <div className='wallet-container'>
               <WalletMultiButton />
